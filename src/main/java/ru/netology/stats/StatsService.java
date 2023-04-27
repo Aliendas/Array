@@ -1,12 +1,12 @@
 package ru.netology.stats;
 public class StatsService {
     // все продажи
-    public int allSales(long[] sales) {
+    public long allSales(long[] sales) {
         long sum = 0;
-        for (long element : sales) {
-            sum += element;
+        for (long sale: sales) {
+            sum += sale;
         }
-        return (int) sum;
+        return sum;
     }
 
     // средние продажи
